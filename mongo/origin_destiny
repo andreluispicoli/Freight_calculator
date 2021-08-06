@@ -1,9 +1,0 @@
-[
-    {
-        "_id" : ObjectId("60a00997dfa9a38e61a411d6"),
-        "origin" : "BEJA",
-        "destiny" : "PORTO",
-        "created_at" : ISODate("2021-05-15T12:57:05.928Z"),
-        "updated_at" : ISODate("2021-05-15T17:49:11.734Z")
-    }
-]

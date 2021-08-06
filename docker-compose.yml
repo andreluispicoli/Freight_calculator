@@ -1,12 +1,24 @@
-version: '3.8'
-
 services:
-  porto:
-    build: .
-    command: python manage.py runserver --settings=settings.production 0.0.0.0:8000
+  mongo:
+    restart: always
+    image: mongo:latest
+    container_name: "mongodb"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: supersecret
+      MONGO_INITDB_DATABASE: calculator
+      MONGO_NON_ROOT_USERNAME: saas
+      MONGO_NON_ROOT_PASSWORD: secret
     volumes:
-      - ./:/usr/src/app/
+      - ./data/db:/var/micro-data/mongodb/data/db
     ports:
-      - 8009:8000
-    env_file:
-      - ./api/.env.dev
+      - 27017:27017
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    depends_on:
+      - mongo
