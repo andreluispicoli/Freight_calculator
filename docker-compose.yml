@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  porto:
+    build: .
+    command: python manage.py runserver --settings=settings.production 0.0.0.0:8000
+    volumes:
+      - ./:/usr/src/app/
+    ports:
+      - 8009:8000
+    env_file:
+      - ./api/.env.dev

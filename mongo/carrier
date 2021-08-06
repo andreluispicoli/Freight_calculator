@@ -1,0 +1,50 @@
+[
+    {
+        "_id" : ObjectId("60a58b52dbfcd1c48cc26f9d"),
+        "name" : "WePickup",
+        "freight_prices" : [
+            {
+                "origin_destiny" : ObjectId("60a00997dfa9a38e61a411d6"),
+                "weight" : ObjectId("60a00a98bebaf3f301d22457"),
+                "price" : 0.7,
+                "expiration" : ISODate("2021-05-17T08:00:00.000Z"),
+                "created_at" : ISODate("2021-05-19T22:02:58.244Z"),
+                "updated_at" : ISODate("2021-05-19T22:02:58.244Z")
+            }
+        ],
+        "created_at" : ISODate("2021-05-19T22:02:58.244Z"),
+        "updated_at" : ISODate("2021-05-19T22:05:24.946Z")
+    },
+    {
+        "_id" : ObjectId("60a58b64dbfcd1c48cc26f9e"),
+        "name" : "Vasp",
+        "freight_prices" : [
+            {
+                "origin_destiny" : ObjectId("60a00997dfa9a38e61a411d6"),
+                "weight" : ObjectId("60a00a98bebaf3f301d22457"),
+                "price" : 0.8,
+                "expiration" : ISODate("2021-05-17T08:00:00.000Z"),
+                "created_at" : ISODate("2021-05-19T22:06:20.573Z"),
+                "updated_at" : ISODate("2021-05-19T22:06:20.574Z")
+            }
+        ],
+        "created_at" : ISODate("2021-05-19T22:02:58.244Z"),
+        "updated_at" : ISODate("2021-05-19T22:06:28.908Z")
+    },
+    {
+        "_id" : ObjectId("60d1d067520e7a5e5c1d1842"),
+        "name" : "NovoCarrier",
+        "freight_prices" : [
+            {
+                "origin_destiny" : ObjectId("60a00997dfa9a38e61a411d6"),
+                "weight" : ObjectId("60a00a98bebaf3f301d22457"),
+                "price" : 0.5,
+                "expiration" : ISODate("2021-07-17T08:00:00.000Z"),
+                "created_at" : ISODate("2021-06-22T11:50:45.113Z"),
+                "updated_at" : ISODate("2021-06-22T11:50:45.113Z")
+            }
+        ],
+        "created_at" : ISODate("2021-06-22T11:50:45.113Z"),
+        "updated_at" : ISODate("2021-06-22T11:59:33.880Z")
+    }
+]
